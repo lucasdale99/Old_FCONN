@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Account</title>
+	<link href = "originalstyle.css" rel = "stylesheet">
+</head>
+<body>
+
+	<div class = "header">
+		<form novalidate action='create_copy.php' method='POST'>
+			<h1>Create Your Account</h1>
+			<div class="form-box">
+				<!-- 
+				<div class='search-field label'>
+					<label for='username'>Choose your username (3 to 16 Characters):</label>
+				</div>
+				<div class='search-field div'>
+					<input type='text' id='username' name='username' class='search-field input' pattern=".{3,16}" placeholder='Username' required>
+				</div>
+				-->
+				<div class='search-field label'>
+					<label for='username'?
+					<span>Choose your username (3 to 16 Characters)</span>
+					<div class='search-field div'>
+												<input type='text' id='username' name='username' class='search-field input' pattern=".{3,16}" placeholder='Username' required minlength ="8">
+					</div>
+					<span class="error" aria-live="polite"></span>
+					</label>
+					
+					<script src="error.js"></script>
+				</div>
+				
+				<div class='search-field label'>
+					<label for='username'>Enter your email:</label>
+				</div>
+				<div class='search-field div'>
+					<input type='email' id='email' name='email' class='search-field input' placeholder='Email' required>	
+				</div>
+				
+				<div class='search-field label'>
+					<label for='username'>Choose your password:</label>
+				</div>
+				<div class='search-field div'>
+					<input type='password' name='password' class='search-field password' placeholder='Password' required >	
+				</div>
+				
+				<div class='search-field div'>
+					<input type = "submit" value = "Create" class="search-btn">
+					<input type = "button" onclick=location="createuser.html" value = "Reset" class="reset-btn" required>
+				</div>
+				
+				<div class='search-field div'>
+					Already have an account? <a href="login.html">Click here to login!</a>
+				</div>
+			</div>
+			
+			
+		</form>
+	</div>

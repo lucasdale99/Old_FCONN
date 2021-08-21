@@ -1,0 +1,13 @@
+.header{
+	height: 100vh;
+	/*background-image: url("nsfbackground.jpg");*/
+	/*opacity: .85;*/
+	background-color: rgba(238,238,213,.5);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	font-family: Verdana;
+}

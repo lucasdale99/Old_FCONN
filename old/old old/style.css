@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	padding: 0;
+	align-content:center;
+}
+/*BACKGROUND AND IMAGE*/
+.header{
+	height: 100vh;
+	background-image: url("nsfbackground.jpg");
+	opacity: .85;
+	background-size: cover;
+	/*background-color: linear-gradient(rgba(0,0,0,0.5));*/
+	background-position: center;
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+	align-content: center;
+	font-family: Verdana;
+}
+/*HEADER TEXT*/
+h1 {
+	color: #fff;
+	margin-bottom: 70 px;
+	font-size: max(3vw, 35px);
+	/*font-size: 45px;*/
+	letter-spacing: 2px;
+	text-align: center;
+}
+/*CONTAINER FOR INPUT FIELD, DROP DOWN MENU, SUBMUT BUTTON, RESET BUTTON*/
+.form-box{
+	padding: 30px;
+	align-content: center;
+	/*margin: auto;*/
+	
+	
+	display: flex;
+	/*grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;*/
+	
+	
+	background: rgba(192,192,192,0.7);
+	border: none;
+	border-radius: 15px;
+}
+/*STYLING FOR BOTH INPUT FIELD AND DROP DOWN MENU*/
+.search-field{
+	/*padding: 10px;*/
+	border: none;
+
+	border-radius: 15px;
+	outline: none;
+	font-family: Verdana;
+}
+/*INPUT FIELD*/
+.awards{
+	/*float: left;*/
+	padding: 10px;
+	width: 32.5%;
+	height: 50px;
+	font-family: Verdana;
+
+}
+
+
+/*DROP DOWN MENU */
+
+.select-box {
+	display: flex;
+	padding: 7px;
+	width: 90%;
+	height: 200%;
+	flex-direction: column;
+
+}
+.select-box .options-container{
+	transition: all 0.4s; 
+	width: 100%;
+	color: #f5f6fa;
+	opacity: 0;
+	border-radius: 8px;
+	overflow: hidden;
+	max-height: 0;
+	order: 1;
+	background: #2f3640;
+	
+}
+
+.selected {
+	background: #2f3640;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	color: #f5f7fa;
+	position: relative;
+	
+	order: 0;
+	
+	
+}
+
+.selected::after{
+	content: "";
+	background: url("downArrow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	position: absolute;
+	height: 100%;
+	width: 32px;
+	right: 3px;
+	top: 15%;
+	
+	transition: all 0.4s;
+}
+
+.select-box .options-container.active{
+	max-height: 240px;
+	opacity: 1;
+	overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+	transform: rotateX(180deg);
+	top: -15%;
+}
+
+/*SCROLL BAR CONFIGURATION*/
+.select-box .options-container::-webkit-scrollbar {
+	width: 0px;
+	border-radius: 0 8px 8px 0;
+	background: #2f3640;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+	border-radius: 0 8px 8px 0;
+	background: #2f3640;
+}
+
+.select-box .option, .selected{
+	padding: 12px 24px;
+	cursor: pointer;
+}
+.select-box .option:hover {
+	background: rgba(192,192,192,.5);
+}
+.select-box label{
+	cursor: pointer;
+}
+
+.select-box .option .radio {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SEARCH BUTTON */
+.search-btn{
+	cursor: pointer;
+	font-family: Verdana;
+	/*padding: 7px;*/
+	height: 50px;
+	width: 100px;
+	background: #C0C0C0;
+	border: none;
+	border-radius: 15px;
+	color: #000;
+
+}
+.search-btn:hover{
+	cursor: pointer;
+	background: #A9A9A9;
+}
+/*RESET BUTTON */
+.reset-btn{
+	cursor: pointer;
+	font-family: Verdana;
+	/*padding-left: 7px;*/
+	height: 50px;
+	width: 100%;
+	background: #C0C0C0;
+	border: none;
+	border-radius: 15px;
+	color: #000;
+
+}
+.reset-btn:hover{
+	cursor: pointer;
+	background: #A9A9A9;
+}

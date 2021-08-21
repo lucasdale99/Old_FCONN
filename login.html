@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+	<link href = "style_create_login.css" rel = "stylesheet">
+</head>
+<body>
+	<div class = "header">
+		<form action='login.php' method='POST'>
+			<h1>Login to your account</h1>
+			<div class="form-box">
+			
+				<div class='search-field label'>
+					<label for='username'>Enter your username:</label>
+				</div>
+				<div class='search-field div'>
+					<input type='text' name='username' class='search-field input' pattern=".{3,16}" placeholder='Username' required>
+				</div>
+
+				<div class='search-field label'>
+					<label for='username'>Enter your password:</label>
+				</div>
+				<div class='search-field div'>
+					<input type='password' name='password' class='search-field password' placeholder='Password' required >	
+				</div>
+				
+				<div class='search-field div'>
+					<input type = "submit" value = "Login" class="search-btn">
+					<input type = "button" onclick=location="login.html" value = "Reset" class="reset-btn" required>
+				</div>
+				
+				<div class='search-field div'>
+					Don't have an account? <a href="createuser.html">Click here to create one!</a>
+				</div>
+			</div>
+		</form>
+	</div>

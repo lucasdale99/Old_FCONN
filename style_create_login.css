@@ -1,0 +1,115 @@
+body {
+	background-color: rgba(238,238,213,.5); /*#E0FFD4, rgba(238,238,213,.7), 223, 241, 214*/
+	margin: 0;
+	padding: 0;
+	align-content:center;
+}
+/*BACKGROUND AND IMAGE*/
+.header{
+	height: 100vh;
+	/*background-color: rgba(224, 255, 212, 1);
+	/*opacity: .85;*/
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+	align-content: center;
+	font-family: Verdana;
+}
+/*HEADER TEXT*/
+h1 {
+	color: #000000;
+	margin-bottom: 70 px;
+	font-size: max(3vw, 35px);
+	letter-spacing: 2px;
+	text-align: center;
+}
+/*CONTAINER FOR INPUT FIELD, DROP DOWN MENU, SUBMUT BUTTON, RESET BUTTON*/
+.form-box{
+	padding: 30px;
+	display: block;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	/*margin: auto;*/
+	
+	
+	/*display: float;*/
+	/*grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;*/
+	
+	
+	background-color: rgba(192,192,192,.8);
+	/*background-color: #fff;*/
+	border: none;
+	border-radius: 15px;
+}
+/*STYLING FOR BOTH INPUT FIELD AND DROP DOWN MENU*/
+.search-field{
+	padding: 10px;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	font-family: Verdana;
+}
+/*INPUT FIELD*/
+.input{
+	padding: 10px;
+	width: 60%;
+	height: 50px;
+	font-family: Verdana;
+}
+/*PASSWORD FIELD*/
+.password{
+	padding: 10px;
+	width: 60%;
+	height: 50px;
+	font-family: Verdana;
+}
+/*PASSWORD FIELD*/
+.password:after{
+	content:' *';
+}
+
+.div{
+	padding: 15px;
+}
+.label{
+	padding: 5px;
+}
+
+
+
+
+
+/*CREATE BUTTON */
+.search-btn{
+	cursor: pointer;
+	font-family: Verdana;
+	height: 50px;
+	width: 15%;
+	background: #C0C0C0;
+	border: 1px solid black;
+	border-radius: 15px;
+	color: #000;
+}
+.search-btn:hover{
+	cursor: pointer;
+	background: #A9A9A9;
+}
+/*RESET BUTTON */
+.reset-btn{
+	cursor: pointer;
+	font-family: Verdana;
+	height: 50px;
+	width: 15%;
+	background: #C0C0C0;
+	border: 1px solid black;
+	border-radius: 15px;
+	color: #000;
+}
+.reset-btn:hover{
+	cursor: pointer;
+	background: #A9A9A9;
+}
