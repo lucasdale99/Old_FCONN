@@ -1,15 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>placeholder file for edit profile</title>
+<title>Login</title>
 	<link href = "style_feed.css" rel = "stylesheet">
 	<link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel = "stylesheet">
 
 
-	<header>
-	placeholder file for edit profile
-	</header>
+
 
 </head>
-
-
+<body style="padding-top:5%;">
+	<div class = "header">
+		<form action='hub.php' method='POST'>
+			<!-- DIV FOR TOP ROW BUTTON ICONS -->
+			<div class="form-box">
+				<div>
+					<table>
+						<td style="padding-left:40%;padding-right:25%;">
+							<strong>
+								Profile
+							</strong>	
+						</td>
+						<td style="float:right;">
+							<button formaction="settings_profile.html">
+							<i class="fas fa-cog"></i>			
+							</button>
+						</td>
+					</table>
+				</div>
+				
+				<!-- DIV FOR PROFILE CONTENT -->
+				<center style="padding-top:10px;">
+					<div style="height:max(3vw, 530px); width: max(3vw, 350px); overflow:auto; padding: 2%;text-align:center;">
+						<div class="form-box">
+							<table>
+								<td style="padding-left: 2%; padding-right:2%; float:left;">
+									<i class="far fa-images"></i>
+								</td>
+								<td style="padding-left: 12.5%; padding-right:30%;">
+									<i class="far fa-images"></i>
+								</td>
+								<td style="padding-left: 2%; padding-right:2%; float:right;">
+									<i class="far fa-images"></i>
+								</td>
+							</table>
+						</div>
+						
+						<div style="padding-top:10px; padding-bottom:10px;">
+							<form formaction="change_picture.php" method="post" enctype="multipart/form-data">
+								<input type="file" name="fileToUpload" id="fileToUpload" placeholder="Change Profile Pic">
+									<br><br>
+									<i class="fas fa-user fa-2x" style="background:#FFFFFF; padding:20px; border-radius:100%;"></i>
+								</input>
+								<p style="padding:10px; font-weight:bold;">
+									First Last
+								</p>
+							</form>
+						</div>
+						
+						<i class="fas fa-chart-line fa-10x"></i>
+						<p>
+							*This is where a chart of the average health score over the past month would be
+						</p>
+						<div style="padding-top:10px; padding-bottom:10px;">
+							<button formaction="feed_you.html" style="width:100%;height:35px; float:left;">
+								<i class="fas fa-utensils"></i>
+								Your Meals
+							</button>
+							<button formaction="statistics.html" style="width:100%;height:35px;">
+								<i class="fas fa-chart-bar"></i>
+								Statistics
+							</button>
+							<button formaction="achievements.html" style="width:100%;height:35px;">
+								<i class="fas fa-trophy"></i>
+								Achievements
+							</button>
+						</div>
+					</div>
+				</center>
+				<!-- DIV FOR BOTTOM ROW BUTTON ICONS -->
+				<div>
+					<table>
+						<td>
+							<button formaction="feed_following.html">
+								<i class="fas fa-home"></i>
+								<center> Feed </center>
+							</button>
+						</td>
+						
+						<td style='padding-left:25px;padding-right:25px;'></td>
+						<td>
+							<button formaction="create_post.html">
+								<i class="fas fa-plus"></i>
+								<center> Post </center>
+							</button>
+						</td>
+						
+						<td style='padding-left:25px;padding-right:25px;'></td>
+						<td>
+							<button formaction="profile.html">
+							<i class="fas fa-user"></i>
+							<center> Save Changes </center>
+							</button>
+							<!-- <input type = "image" onclick=location="notifications.html" value = "notifications" class="notifi-btn" src="notifications.png" style="width:5%;height:5%;" required > -->
+						</td>
+					</table>	
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
