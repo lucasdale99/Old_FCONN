@@ -22,7 +22,7 @@ If you want your own branch to later add to main, follow these steps.
 5. Once you are done with your changes, **git add .** 
     - Don't forget the "." at the end, that brings all changes.
 6. **git commit -m "Message of what you did"**
-7. **git push **
+7. **git push**
     - This will push your changes to your local branch.
 8. **git checkout main**
 9. **git merge < name of branch you just made >**
