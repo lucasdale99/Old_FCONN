@@ -14,16 +14,17 @@ In order to open up and make changes to this project, follow these steps.
 
 You don't want to be on the same branch that someone else is making changes on!
 If you want your own branch to later add to main, follow these steps.
-1. git checkout -b < name of new branch > 
+1. **git checkout -b < name of new branch >** 
 2. This will put you on that branch.
-3. git fetch
+3. **git fetch**
    -This will pull in any recent changes someone has made.
-4. Once you are done with your changes, git add . 
+4. Once you are done with your changes, **git add .** 
     - Don't forget the "." at the end, that brings all changes.
-5. git commit -m "Message of what you did"
-6. git push 
+5. **git commit -m "Message of what you did"**
+6. **git push **
     - This will push your changes to your local branch.
-7. git checkout main
-8. git merge < name of branch you just made >
-9. If you worked on the same file as someone else, you will have conflicts.
-   Let me know and I'll help you fix them.
+7. **git checkout main**
+8. **git merge < name of branch you just made >**
+    -If you worked on the same file as someone else, you will have conflicts.
+     Let me know and I'll help you fix them.
+10. **git push**
