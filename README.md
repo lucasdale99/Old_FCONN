@@ -29,3 +29,9 @@ If you want your own branch to later add to main, follow these steps.
     -If you worked on the same file as someone else, you will have conflicts.
      Let me know and I'll help you fix them.
 10. **git push**
+
+
+***Even Easier***
+You can do all the above steps in the source control on vscode.
+![image](https://user-images.githubusercontent.com/47707510/130386030-5f9485d2-9c2b-4add-8236-8ec68c96b6a0.png)
+
