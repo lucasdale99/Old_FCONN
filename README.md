@@ -32,6 +32,8 @@ If you want your own branch to later add to main, follow these steps.
 
 
 ***Even Easier***
+
 You can do all the above steps in the source control on vscode.
+
 ![image](https://user-images.githubusercontent.com/47707510/130386030-5f9485d2-9c2b-4add-8236-8ec68c96b6a0.png)
 
