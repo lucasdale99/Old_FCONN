@@ -10,7 +10,7 @@ In order to open up and make changes to this project, follow these steps.
 4. Run and debug in Chrome.
     - This should open up the project in chrome with your changes.
 
-**Don't forget**
+***Don't forget***
 
 You don't want to be on the same branch that someone else is making changes on!
 If you want your own branch to later add to main, follow these steps.
